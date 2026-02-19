@@ -15,7 +15,8 @@ Plugin 'jacekd/vim-iawriter'
 Plugin 'logico/typewriter-vim'
 Plugin 'Yggdroot/hiPairs'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'srcery-colors/srcery-vim'
+"Plugin 'altercation/vim-colors-solarized'
 Plugin 'amix/vim-zenroom2'
 Plugin 'chrisbra/vim-diff-enhanced'
 Plugin 'godlygeek/tabular'
@@ -37,7 +38,7 @@ Plugin 'rstacruz/sparkup'
 Plugin 'sbdchd/neoformat'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sjl/gundo.vim'
-Plugin 'suan/vim-instant-markdown'
+" Plugin 'suan/vim-instant-markdown'
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
@@ -127,7 +128,7 @@ let g:incsearch#magic = '\v'
 
 set ignorecase
 set smartcase
-set gdefault
+"set gdefault
 set incsearch
 set showmatch
 set hlsearch
@@ -228,7 +229,8 @@ au Filetype clojure nmap <c-c><c-t> :call TestToplevel()<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " COLOR
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-colorscheme zenburn
+colorscheme srcery
+"colorscheme zenburn
 "colorscheme solarized
 set background=dark
 

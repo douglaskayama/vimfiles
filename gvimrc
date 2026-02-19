@@ -1,20 +1,37 @@
 if has("gui_macvim")
     macmenu &File.New\ Tab key=<nop>
     "set background=light
-    "set background=dark
-    "colorscheme solarized
-    "set guifont=Letter\ Gothic\ Std:h15
-    "set guifont=Ubuntu\ Mono:h16
+    set background=dark
+
+    "colorscheme desert
+    "colorscheme zaibatsu
+    colorscheme srcery
+
+    "0O 1lI| {([])}
+    "set guifont=0xProto\ Nerd\ Font:h18
     "set guifont=Anonymous\ Pro:h16
-    "set guifont=Source\ Code\ Pro:h14
-    "set guifont=Operator\ Mono:h16
-    "set guifont=JetBrains\ Mono:h16
-
-    "set guifont=IBM\ Plex\ Mono:h16
-
+    "set guifont=CMUTypewriter\ NF:h20
+    "set guifont=DM\ Mono:h18
+    "set guifont=Departure\ Mono:h18
+    "set guifont=Fira\ Code:h18
+    "set guifont=Hack\ Nerd\ Font:h18
+    "set guifont=Hasklug\ Nerd\ Font:h18
+    set guifont=IBM\ Plex\ Mono:h18
     "set guifont=Inconsolata:h16
-"    set linespace=3
-"    set transparency=6
+    "set guifont=JetBrainsMono\ NF:h16
+    "set guifont=JetBrains\ Mono:h16
+    "set guifont=JuliaMono\ Nerd\ Font:h17
+    "set guifont=Letter\ Gothic\ Std:h15
+    "set guifont=NotoMono\ NFP:h18
+    "set guifont=Operator\ Mono:h16
+    "set guifont=RobotoMono\ Nerd\ Font:h18
+    "set guifont=Space\ Mono:h18
+    "set guifont=Source\ Code\ Pro:h18
+    "set guifont=Ubuntu\ Mono:h16
+    "set guifont=Victor\ Mono:h16
+
+    set linespace=3
+    set transparency=8
     " make Mac's Option key behave as the Meta key
     "set macmeta
 
@@ -29,14 +46,14 @@ else
 endif
 "colorscheme zenburn
 "colorscheme mustang
-colorscheme iawriter
+"colorscheme iawriter
 set linespace=5
-set background=light
-set guifont=Cousine:h16
+"set background=light
+"set guifont=Cousine:h16
 
 let g:writeroom = 0
 if has("gui_macvim")
-"    let g:transparency = &transparency
+    let g:transparency = &transparency
 endif
 function! WriteRoom()
     if has("gui_running")
