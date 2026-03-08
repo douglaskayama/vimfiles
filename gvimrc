@@ -5,7 +5,8 @@ if has("gui_macvim")
 
     "colorscheme desert
     "colorscheme zaibatsu
-    colorscheme srcery
+    "colorscheme srcery
+    colorscheme Ariake-Dark
 
     "0O 1lI| {([])}
     "set guifont=0xProto\ Nerd\ Font:h18

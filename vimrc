@@ -15,7 +15,8 @@ Plugin 'jacekd/vim-iawriter'
 Plugin 'logico/typewriter-vim'
 Plugin 'Yggdroot/hiPairs'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'srcery-colors/srcery-vim'
+"Plugin 'srcery-colors/srcery-vim'
+Plugin 'davidcelis/vim-ariake-dark'
 "Plugin 'altercation/vim-colors-solarized'
 Plugin 'amix/vim-zenroom2'
 Plugin 'chrisbra/vim-diff-enhanced'
@@ -81,11 +82,18 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set laststatus=2
 set relativenumber
+
+" Let's save undo info
+if !isdirectory($HOME."/.vim/undo-dir")
+    call mkdir($HOME."/.vim/undo-dir", "p", 0700)
+endif
+set undodir=~/.vim/undo-dir
 set undofile
 
 set lazyredraw
 
-set spell spelllang=en_us
+"set spell spelllang=en_us
+set nospell
 
 " Syntastic {{{
 
@@ -171,7 +179,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-autocmd vimenter * if !argc() | NERDTree | endif
+"autocmd vimenter * if !argc() | NERDTree | endif
 map <F3> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
@@ -229,7 +237,8 @@ au Filetype clojure nmap <c-c><c-t> :call TestToplevel()<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " COLOR
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-colorscheme srcery
+colorscheme Ariake-Dark
+"colorscheme srcery
 "colorscheme zenburn
 "colorscheme solarized
 set background=dark
